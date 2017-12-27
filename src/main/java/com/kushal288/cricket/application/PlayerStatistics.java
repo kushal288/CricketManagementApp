@@ -1,15 +1,14 @@
 package com.kushal288.cricket.application;
 
-import java.util.Map;
+import java.util.List;
 
-import com.kushal288.cricket.data.MatchTypes;
 import com.kushal288.cricket.data.PlayerProfile;
 
 public class PlayerStatistics
 {
 
 	private PlayerProfile playerProfile;
-	private Map<MatchTypes, AggregatedStats> allStats;
+	private List<AggregatedStats> allStats;
 
 	public PlayerProfile getPlayerProfile()
 	{
@@ -21,12 +20,12 @@ public class PlayerStatistics
 		this.playerProfile = playerProfile;
 	}
 
-	public Map<MatchTypes, AggregatedStats> getAllStats()
+	public List<AggregatedStats> getAllStats()
 	{
 		return allStats;
 	}
 
-	public void setAllStats(Map<MatchTypes, AggregatedStats> allStats)
+	public void setAllStats(List<AggregatedStats> allStats)
 	{
 		this.allStats = allStats;
 	}
